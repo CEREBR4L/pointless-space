@@ -9,6 +9,19 @@ body{
 	justify-content: center;
 	align-items: center;
 	background-color: #2e363f;
+	animation: colours 3s infinite;
+}
+
+@keyframes colours{
+	0%   { background-color: #2e363f; }
+	33%  { background-color: #725782; }
+	66%  { background-color: #925255; }
+	100% { background-color: #2e363f; }
+
+}	
+
+.cont:hover{
+	background-color: #8f3863;
 }
 
 .circle{
