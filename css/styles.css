@@ -1,0 +1,29 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.cont{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #2e363f;
+}
+
+.circle{
+	height: 5vh;
+	width: 5vh;
+	border-radius: 50%;
+	border: 10px solid #242a31;
+	transition: 3s;
+}
+
+.circle:hover{
+	height: 50vh;
+	width: 50vh;
+	border: 50px solid #242a31;
+	border-radius: 0;
+	cursor: pointer;
+	transform: rotate(45deg);
+}
