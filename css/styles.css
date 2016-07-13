@@ -40,3 +40,23 @@ body{
 	cursor: pointer;
 	transform: rotate(45deg);
 }
+
+
+@media (max-width: 1000px) {
+	.circle{
+		height: 10vw;
+		width: 10vw;
+		border-radius: 50%;
+		border: 10px solid #242a31;
+		transition: 3s;
+	}
+
+	.circle:hover{
+		height: 25vw;
+		width: 25vw;
+		border: 50px solid #242a31;
+		border-radius: 0;
+		cursor: pointer;
+		transform: rotate(45deg);
+	}
+}
