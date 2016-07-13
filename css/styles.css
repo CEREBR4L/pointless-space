@@ -8,39 +8,70 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	background-color: #2e363f;
-	animation: colours 3s infinite;
+	animation: colours 6s infinite;
 }
-
-@keyframes colours{
-	0%   { background-color: #2e363f; }
-	33%  { background-color: #725782; }
-	66%  { background-color: #925255; }
-	100% { background-color: #2e363f; }
-
-}	
 
 .cont:hover{
 	background-color: #8f3863;
+}
+
+.title{
+	position: absolute;
+	top: 20px;
+	left: 25%;
+	width: 50%;
+	text-align: center;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: .5em;
+}
+
+.foot{
+	position: absolute;
+	bottom: 20px;
+	left: 25%;
+	width: 50%;
+	text-align: center;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+.foot>a{
+	text-decoration: none;
+	color: #fff;
+	font-size: .7em;
+}
+
+.foot>a:hover{
+	text-decoration: none;
+	color: #fff;
+	opacity: .5;
+}
+
+.item{
+	padding: 0 0;
+	margin: 0 0;
+	opacity: .3;
 }
 
 .circle{
 	height: 5vh;
 	width: 5vh;
 	border-radius: 50%;
-	border: 10px solid #242a31;
-	transition: 3s;
+	border: 10px solid #fff;
+	transition: 2.5s;
 }
 
 .circle:hover{
 	height: 50vh;
 	width: 50vh;
-	border: 50px solid #242a31;
+	border: 50px solid #fff;
 	border-radius: 0;
 	cursor: pointer;
-	transform: rotate(45deg);
+	transform: rotate(180deg);
 }
-
 
 @media (max-width: 1000px) {
 	.circle{
@@ -57,6 +88,20 @@ body{
 		border: 50px solid #242a31;
 		border-radius: 0;
 		cursor: pointer;
-		transform: rotate(45deg);
+		transform: rotate(180deg);
 	}
 }
+
+@keyframes colours{
+	0%   { background-color: #2e363f; }
+	33%  { background-color: #725782; }
+	66%  { background-color: #925255; }
+	100% { background-color: #2e363f; }
+
+}	
+
+@keyframes pulse{
+	0%   { width: 5vh; height: 5vh; }
+	50%  { transform: scale(1.1); }
+	100% { width: 5vh; height: 5vh; }
+}	
