@@ -1,0 +1,88 @@
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.cont{
+	width: 100vw;
+	min-height: 100vh;
+	background-color: #2A202D;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ani-cont{
+	width: 0;
+}
+
+.keeper{
+	-webkit-animation-name: woo;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+.thing{
+	width: 2px;
+	height: 10px;
+	background-color: #fff;
+	margin: 10px 0;
+	animation: bumpin 1.5s infinite ease-in-out; 
+}
+
+.thing:nth-child(1),
+.thing:nth-child(10){
+	animation-delay: .0s;
+}
+
+.thing:nth-child(2),
+.thing:nth-child(9){
+	animation-delay: .2s;
+}
+
+.thing:nth-child(3),
+.thing:nth-child(8){
+	animation-delay: .4s;
+}
+
+.thing:nth-child(4),
+.thing:nth-child(7){
+	animation-delay: .6s;
+}
+
+.thing:nth-child(5),
+.thing:nth-child(6){
+	animation-delay: .8s;
+}
+
+@keyframes bumpin{
+	0%{ 
+		width: 2px; 
+		background-color: #DA3E52;
+		transform: translateX(0px);
+	}
+
+	33% { background-color: #F2E94E; }
+
+	50%{ 
+		width: 40px; 
+		transform: translateX(-20px);
+	}
+	
+	66% { background-color: #E07D4C; }
+
+	100%{ 
+		width: 2px;
+		background-color: #DA3E52; 
+		transform: translateX(0px);
+	}
+}
+
+@keyframes woo{
+	100% { 
+		transform: rotate(360deg);
+	}
+}
+
