@@ -27,7 +27,7 @@ body{
 .thing{
 	width: 2px;
 	height: 10px;
-	background-color: #fff;
+	background-color: #DA3E52;
 	margin: 10px 0;
 	animation: bumpin 1.5s infinite ease-in-out; 
 }
