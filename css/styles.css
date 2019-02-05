@@ -73,32 +73,6 @@ body{
 	transform: rotate(180deg);
 }
 
-.bryan{
-	font-family: sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	font-weight: 700;
-	font-size: 48pt;
-	color: #fff;
-	animation: bryan 1s infinite;
-}
-
-@keyframes bryan{
-	0%{
-		font-size: 48pt;
-		letter-spacing: 5px;
-	}
-	50%{
-		font-size: 56pt;
-		letter-spacing: 7px;
-	}
-	100%{
-		font-size: 48pt;
-		letter-spacing: 5px;
-	}
-}
-
-
 @media (max-width: 1000px) {
 	.circle{
 		height: 10vw;
