@@ -1,4 +1,4 @@
-# POINTLESS MEDIA
+# POINTLESS GAMES
 
-A repo for [pointless.space](http://pointless.space) a game development studio.
+The face of [pointless games](http://pointless.space) where we will present all our games.
 
