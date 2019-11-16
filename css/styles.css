@@ -158,7 +158,9 @@ body{
 	@media (max-width: 1000px){
 		
 		.above-fold-text{
-			margin: 0 50px;
-			font-size: 12pt;
+			margin: 0 30px;
+			font-size: 10pt;
+			letter-spacing: 3pt;
+			text-align: center;
 		}
 	}
