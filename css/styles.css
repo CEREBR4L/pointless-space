@@ -153,3 +153,12 @@ body{
 		padding-bottom: 7px;
 		letter-spacing: 4pt;
 	}
+
+
+	@media (max-width: 1000px){
+		
+		.above-fold-text{
+			margin: 0 50px;
+			font-size: 12pt;
+		}
+	}
